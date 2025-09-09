@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../base/base.css">
+    <title>Inicio de sesión</title>
+</head>
+<body>
+    <canvas class="rainfall" id="rainfall"></canvas>
+    <div id="base"></div>
+
+    <div class="form">
+        <h2>Inicio de sesión</h2>
+        <form class="login-form" id="loginForm" method="post">
+            <input type="email" id="email" name="email" placeholder="Correo Electrónico *">
+            <input type="password" id="password" name="password" placeholder="Contraseña *">
+            <button type="submit" class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Iniciar sesión
+            </button>
+        </form>
+        <p class="message">¿No tienes una cuenta? <a href="../registro/register.html">Crear cuenta</a></p>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../base/base.js"></script>
+<script src="login.js"></script>
+</html>
