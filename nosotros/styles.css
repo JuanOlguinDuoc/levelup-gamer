@@ -1,0 +1,13 @@
+main{
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+p, h2, h3{
+    color: azure;
+}
+
+section img{
+    width: 15rem;
+}
