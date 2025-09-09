@@ -1,0 +1,36 @@
+main {
+    display: grid;
+    text-align: center;
+}
+
+.articulo {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    border: 1px solid black;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 80%, rgba(122, 255, 226, 0.38) 100%);
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #9bfab0;
+}
+
+p {
+    color: aliceblue;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
+}
+
+a {}
