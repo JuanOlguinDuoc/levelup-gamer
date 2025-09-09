@@ -1,0 +1,47 @@
+.contenedor {
+    display: grid;
+    color: aliceblue;
+    border: 1px solid black;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 80%, rgba(122, 255, 226, 0.38) 100%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.formulario{
+    margin-right: 1rem;
+}
+
+.formulario input, .formulario textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+
+}
+
+.formulario button {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+h1, h2, h3{
+    color: aquamarine;
+}
