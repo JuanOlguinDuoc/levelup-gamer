@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../base/base.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Registro</title>
 </head>
+
+
 <body>
-    <nav class="navegation">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">Productos</a></li>
-            <li><a href="#us">Nosotros</a></li>
-            <li><a href="#about">Blogs</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+    <canvas class="rainfall" id="rainfall"></canvas>
+    <div id="base"></div>
+    <div class="form form-register">
+
+        <form class="register-form" method="POST">
+            <h2>Registro</h2>
+            <div class="inputs">
+                <input type="text" id="run" name="run" placeholder="RUN *" />
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre *" />
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos *" />
+                <input type="text" id="direccion" name="direccion" placeholder="Dirección *" />
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico *" />
+                <input type="password" id="password" name="password" placeholder="Contraseña *" />
+                <input type="password" id="confirmPassword" name="confirmPassword"
+                    placeholder="Confirmar Contraseña *" />
+            </div>
+            <button type="submit" class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Crear cuenta
+            </button>
+            <p class="message">¿Ya tienes una cuenta? <a href="../login/login.html">Iniciar sesión</a></p>
+        </form>
+    </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../base/base.js"></script>
+
 </html>

@@ -1,0 +1,9 @@
+.inputs{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
+}
+
+.form-register{
+    width: 40rem;
+}
