@@ -1,0 +1,22 @@
+const imagenes = [
+    '../images/fondo.png',
+    '../images/fondo2.png',
+    '../images/fondo3.png',
+    '../images/fondo4.png'
+];
+
+// Guardar en LocalStorage
+localStorage.setItem('imagenesVideojuegos', JSON.stringify(imagenes));
+
+// Recuperar del LocalStorage
+const imagenesGuardadas = JSON.parse(localStorage.getItem('imagenesVideojuegos'));
+const galeria = document.querySelector('.galeria');
+
+// Crear elementos <img> y agregarlos a la galería
+if (imagenesGuardadas) {
+    imagenesGuardadas.forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        galeria.appendChild(img);
+    });
+}
