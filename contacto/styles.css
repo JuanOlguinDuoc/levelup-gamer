@@ -2,7 +2,7 @@
     display: grid;
     color: aliceblue;
     border: 1px solid black;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 8rem;
     margin-right: 8rem;
     background: #000000;
@@ -13,23 +13,24 @@
     margin-bottom: 1.5rem;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.formulario{
+.formulario {
     margin-right: 1rem;
 }
 
-.formulario input, .formulario textarea {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 13px;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
 
 }
 
@@ -38,10 +39,47 @@
     width: 100%;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     color: aquamarine;
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+    max-width: 90vw;
+    color: red;
+    margin-bottom: 1rem;
+    background: #fff3f3;
+    border: 1px solid #ffb3b3;
+    padding: 1.5rem 3rem 1.5rem 1.5rem; /* Aumenta el espacio a la derecha */
+    border-radius: 8px;
+    z-index: 9999;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    text-align: justify;
+}
+
+.close-notification {
+    position: absolute;
+    top: 0.7rem;
+    right: 1.2rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #d00;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    text-align: right; /* Añade esto */
 }

@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300);
 
+
+
+html, body {
+  min-height: 100vh;
+}
+
 html {
   height: 100%;
 }
@@ -8,11 +14,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #000000;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 2%, rgb(68, 27, 60) 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
-
-
 
 .form {
   position: relative;
@@ -25,7 +30,7 @@ body {
   padding: 40px;
   transform: translate(-50%, -50%);
   background: #000000;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 80%, rgba(122, 255, 226, 0.38) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 80%, rgba(122, 255, 226, 0.38) 100%);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
   border-radius: 10px;
@@ -75,7 +80,8 @@ button {
   overflow: hidden;
   transition: .5s;
   margin-top: 15px;
-  letter-spacing: 2px
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -183,7 +189,8 @@ header {
 .buttons {
   width: 100%;
   height: 50px;
-  background-color: #1202275e;
+  background: #ac7ceb;
+  background: linear-gradient(0deg, rgba(172, 124, 235, .3) 0%, rgba(18, 2, 39, 1) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,6 +205,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  z-index: 1000;
 }
 
 ul li {
@@ -258,4 +266,47 @@ canvas.rainfall {
   width: 2.5rem;
   height: auto;
 
+}
+
+
+.carrito img {
+  right: 1rem;
+  z-index: 1000;
+  position: fixed;
+  top: 4.5rem;
+  width: 2rem;
+  height: auto;
+padding: .5rem;
+background: linear-gradient(0deg,rgba(124, 191, 235, 1) 0%, rgba(18, 2, 39, 0.31) 90%);
+border-radius: 50%;
+}
+
+.auth-buttons {
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    z-index: 1100;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-auth {
+    background: #996ed5;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.btn-auth:hover {
+    background: #6e47a3;
+}
+
+.cerrar{
+    display: none;
 }
