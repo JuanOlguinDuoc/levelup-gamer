@@ -1,6 +1,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 <nav class="navegation">
     <audio autoplay loop>
         <source src="../audio/Maxwell Cat.mp3" type="audio/mp3">
@@ -13,7 +15,7 @@
         <ul>
             <li></li>
             <li><a href="../home/index.html">Home</a></li>
-            <li><a href="#news">Productos</a></li>
+            <li><a href="../productos/productos.html">Productos</a></li>
             <li><a href="../nosotros/nosotros.html">Nosotros</a></li>
             <li><a href="../blogs/blogs.html">Blogs</a></li>
             <li><a href="../contacto/contacto.html">Contacto</a></li>
@@ -21,10 +23,18 @@
         </ul>
     </div>
     <div class="carrito">
-            <img src="../images/carrito.png" alt="carrito de compras">
-        </a>
+        <img src="../images/carrito.png" alt="carrito de compras">
+    </div>
+    <div class="auth-buttons" id="auth-buttons">
+        <div class="session" id="session">
+            <a href="../login/login.html" class="btn-auth">Iniciar sesión</a>
+            <a href="../registro/register.html" class="btn-auth">Registrarse</a>
+        </div>
+        <div class="cerrar" id="cerrarSession">
+            <a href="../home/index.html" class="btn-auth" onclick="deleteSession()">Cerrar sesión</a>
+        </div>
     </div>
 </nav>
 <div class="gif">
-    <img src="../images/maxwell.gif" alt="Mettaton bailando">
+    <img src="../gif/maxwell.gif" alt="Gif bailando" class="gif">
 </div>

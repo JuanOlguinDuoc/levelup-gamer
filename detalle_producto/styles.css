@@ -1,0 +1,84 @@
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    height: 100vh;
+    height: 100dvh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 2%, rgb(68, 27, 60) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.btn {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 95%;
+    background: linear-gradient(0deg, rgba(124, 191, 235, 1) 0%, rgba(18, 2, 39, 0.31) 50%);
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h1 {
+    color: aquamarine;
+    text-align: center;
+}
+
+p {
+    color: aliceblue;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.detalle-precio {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ffcc00;
+    text-align: left;
+}
+
+.detalle-precio::before {
+    content: "Precio: ";
+}
+
+.detalle-atributos {
+    font-size: 1.3rem;
+    color: #ffcc00;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    border: 1px solid black;
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 80%, rgba(122, 255, 226, 0.38) 100%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    margin: 2rem 8rem 1.5rem 8rem;
+}
+
+.imagen img {
+    margin-top: 3.3rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+}

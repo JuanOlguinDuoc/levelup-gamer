@@ -1,9 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300);
 
-*{
-  font-family: "Pixelify Sans", sans-serif;
-  font-optical-sizing: auto;
-}
+
 
 html, body {
   min-height: 100vh;
@@ -83,7 +80,8 @@ button {
   overflow: hidden;
   transition: .5s;
   margin-top: 15px;
-  letter-spacing: 2px
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -275,9 +273,40 @@ canvas.rainfall {
   right: 1rem;
   z-index: 1000;
   position: fixed;
-  top: .5rem;
+  top: 4.5rem;
   width: 2rem;
   height: auto;
-  filter: brightness(0) saturate(100%) invert(89%) sepia(12%) saturate(669%) hue-rotate(89deg) brightness(99%) contrast(95%);
+padding: .5rem;
+background: linear-gradient(0deg,rgba(124, 191, 235, 1) 0%, rgba(18, 2, 39, 0.31) 90%);
+border-radius: 50%;
+}
 
+.auth-buttons {
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    z-index: 1100;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-auth {
+    background: #996ed5;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.btn-auth:hover {
+    background: #6e47a3;
+}
+
+.cerrar{
+    display: none;
 }

@@ -7,3 +7,43 @@
 .form-register{
     width: 40rem;
 }
+
+.inputs span {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+    max-width: 90vw;
+    color: red;
+    margin-bottom: 1rem;
+    background: #fff3f3;
+    border: 1px solid #ffb3b3;
+    padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+    border-radius: 8px;
+    z-index: 9999;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    text-align: justify;
+}
+
+.close-notification {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #d00;
+    cursor: pointer;
+    font-weight: bold;
+
+}
